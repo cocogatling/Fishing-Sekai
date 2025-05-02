@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 5vw;  /* Scales text based on screen width (good for mobile) */
+    text-align: center;
+    background-color: #323339;
+    color: #fff;
+}
+
+hr {
+    width: 500px;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+#water {
+    width: 350px;
+    height: 350px;
+
+    background-image: url('images/water.gif');
+    background-size: cover;
+    background-position: center;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    position: absolute;
+    z-index: 10;
+
+    opacity: 0.6;
+}
+
+#board {
+    width: 350px;
+    height: 350px;
+
+    background-image: url('images/KanaFishing.png');
+    background-size: cover;
+    background-position: center;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    position: relative;
+    z-index: 5;
+}
+
+.tile {
+    width: 65px;
+    height: 65px;
+    border: 5px solid #bbada0;
+
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .game-over-section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8f7a66;
+    color: #f9f6f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+button {
+font-size: 5vw;
+padding: 3vw 6vw;
+margin: 4vw;
+}
+
+/* Media query for desktop */
+@media (min-width: 1000px) {
+  body {
+    font-size: 14px; 
+    padding: 20px;
+  }
+
+  button {
+    font-size: 14px;  
+    padding: 10px 20px;
+    margin: 10px;
+  }
+}
